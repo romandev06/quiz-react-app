@@ -64,7 +64,7 @@ function App() {
 
   return (
     <>
-      {step !== answers.length ? <Game step={step} question={question} upStep={upStep} /> : <Result correct={correct} />}
+      {step !== answers.length ? <Game step={step} question={question} upStep={upStep} /> : <Result s correct={correct} />}
     </>
   )
 }
