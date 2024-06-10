@@ -1,3 +1,7 @@
+#root {
+  overflow-x: hidden;
+}
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -28,7 +32,7 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-  background-color: #2f2c50;
+  background-color: #9593b0;
 }
 
 h1 {
@@ -99,8 +103,8 @@ ul li {
 .game-section {
   position: relative;
   width: 500px;
-  height: 250px;
   background-color: white;
+  box-shadow: 10px 10px 2px rgba(255, 255, 255, 0.4);
   padding: 15px;
   border-radius: 14px;
 
@@ -125,9 +129,6 @@ ul li {
   }
 }
 
-
-
-
 /* game-section */
 
 
@@ -139,6 +140,7 @@ ul li {
   width: 500px;
   height: 250px;
   background-color: white;
+  box-shadow: 10px 10px 2px rgba(255, 255, 255, 0.4);
   padding: 15px;
   border-radius: 14px;
   background-image: url(./img/confetti.webp);
@@ -179,3 +181,107 @@ ul li {
 }
 
 /* result-section */
+
+
+
+/* media */
+
+@media (max-width: 610px) {
+  .game-section,
+  .result-section {
+    width: 350px;
+  }
+
+  .result-section {
+    height: 200px;
+  }
+
+  .game-section ul li {
+    width: 165px;
+    font-size: 14px;
+  }
+
+  .game-section ul {
+    margin-top: 120px;
+  }
+
+  .result-section h4 {
+    width: 100%;
+    font-size: 27px;
+  }
+
+  .result-section button {
+    width: 250px;
+    font-size: 14px;
+  }
+}
+
+
+@media (max-width: 450px) {
+  .game-section,
+  .result-section {
+    width: 300px;
+  }
+
+  .result-section {
+    height: 180px;
+  }
+
+  .game-section ul li {
+    width: 145px;
+    font-size: 13px;
+  }
+
+  .game-section ul {
+    margin-top: 120px;
+  }
+
+  .game-section h1 {
+    left: 35px;
+  }
+
+  .result-section h4 {
+    width: 100%;
+    font-size: 24px;
+  }
+
+  .result-section button {
+    width: 250px;
+    font-size: 13px;
+  }
+}
+
+
+@media (max-width: 390px) {
+  .game-section,
+  .result-section {
+    width: 270px;
+  }
+
+  .result-section {
+    height: 165px;
+  }
+
+  .game-section ul li {
+    width: 160px;
+    font-size: 13px;
+  }
+
+  .game-section ul {
+    margin-top: 120px;
+  }
+
+  .game-section h1 {
+    left: 30px;
+  }
+
+  .result-section h4 {
+    width: 100%;
+    font-size: 23px;
+  }
+
+  .result-section button {
+    width: 230px;
+    font-size: 13px;
+  }
+}

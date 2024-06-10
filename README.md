@@ -1,8 +1,8 @@
-https://github.com/romandev06/quiz-react-app/assets/124496979/a9ef5557-79af-4e53-af78-810373f54217
+# React + Vite
 
-потратил большое количество попыток, чтобы react+vite отобразить на github pages, но все напрасно. в итоге воспользовался данным способом
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-для тех, кому нужно открыть проект вручную:
-в терминале проекта написать: 
-1 - npm run dev
-2 - после чего в в терминале отобразится ссылка (просто скопируйте ее и вставье в адресную строку браузера)
+Currently, two official plugins are available:
+
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
