@@ -41,7 +41,7 @@ function Game( { step, question, upStep } ) {
 
   return (
     <section className='game-section'>
-      <div><span style={{width: `${progressLine}%`}}></span></div>
+      <div><span className='progress-line' style={{width: `${progressLine}%`}}></span></div>
       <h1>{question.title}</h1>
       <ul>
         {question.variants.map((variant, index) => <li onClick={() => upStep(index)} key={variant}>{variant}</li>)}

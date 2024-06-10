@@ -92,10 +92,12 @@ ul li {
   transition: all 0.3s linear;
   background-color: #504d6e;
   color: white;
+}
 
-  &:hover {
+@media (hover: hover) {
+  ul li:hover {
     background-color: rgb(221, 220, 220);
-    color: #504d6e;
+    color: #6e4d4d;
     cursor: pointer;
   }
 }
@@ -173,18 +175,23 @@ ul li {
     left: 50%;
     transform: translate(-50%, -50%);
     transition: all 0.3s linear;
+  }
+}
 
-    &:hover {
-      background-color: rgb(221, 220, 220);
+@media(hover:hover) {
+  .result-section button:hover {
+    background-color: rgb(221, 220, 220);
       color: #504d6e;
       cursor: pointer;
-    }
   }
 }
 
 /* result-section */
 
 
+.progress-line {
+  transition: 0.3s linear all;
+}
 
 /* media */
 
@@ -218,7 +225,6 @@ ul li {
   }
 }
 
-
 @media (max-width: 450px) {
   .game-section,
   .result-section {
@@ -227,11 +233,6 @@ ul li {
 
   .result-section {
     height: 180px;
-  }
-
-  .game-section ul li {
-    width: 145px;
-    font-size: 13px;
   }
 
   .game-section ul {
@@ -252,7 +253,6 @@ ul li {
     font-size: 13px;
   }
 }
-
 
 @media (max-width: 390px) {
   .game-section,
