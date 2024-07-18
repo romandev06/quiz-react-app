@@ -22,11 +22,22 @@ const answers = [
 ]
 
 
+
+
 function Result( { correct } ) {
+  const correctAnswers = () => {
+    if (correct === 0) {
+      return <h4>Вы отгадали {correct} ответов из {answers.length}</h4>
+    } else if (correct === 1) {
+      return <h4>Вы отгадали {correct} ответ из {answers.length}</h4>
+    } else {
+      return <h4>Вы отгадали {correct} ответа из {answers.length}</h4>
+    }
+  }
 
   return (
     <section className='result-section'>
-      <h4>Вы отгадали {correct} ответа из {answers.length}</h4>
+      {correctAnswers()}
       <a href="/">
         <button>Попробовать снова</button>
       </a>
@@ -56,6 +67,7 @@ function App() {
   const [correct, setCorrect] = useState(0)
   let question = answers[step]
 
+
   function upStep(index) {
     setStep(step + 1)
 
@@ -70,3 +82,8 @@ function App() {
 }
 
 export default App
+
+
+
+// следующий шаг при клике ширину прогресс бара увеличивать (добавить логику, которая будет всегда точной, не смотря на количество обьектов в answers)
+// затем при клике нужно задавать setStep + 1, чтобы менять уже title и variants
